@@ -1,11 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+
+import { ThemeProvider } from 'styled-components/native';
+import { defaultTheme } from './src/assets/styles/theme/default';
+import { Container } from './src/assets/styles';
+import { Title } from './src/components/Title';
 
 export default function App() {
   return (
-    <View>
-      <Text>Hello World!</Text>
-      <StatusBar />
-    </View>
+    <ThemeProvider theme={defaultTheme}>
+      <Container>
+        <StatusBar />
+        <Title />
+      </Container>
+    </ThemeProvider>
   );
 }
