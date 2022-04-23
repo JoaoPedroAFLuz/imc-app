@@ -1,9 +1,10 @@
 export const defaultTheme = {
-  backgroundColor: {
-    stronger: '#fff',
-    strong: '#eee',
-    normal: '#ddd',
-    light: '#ccc',
-    lighter: '#bbb',
-  },
+  stronger: '#fff',
+  strong: '#eee',
+  normal: '#ddd',
+  light: '#ccc',
+  lighter: '#bbb',
+
+  main: '#ff0043',
+  inverse: '#000',
 };
